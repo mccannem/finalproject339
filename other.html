@@ -6,12 +6,17 @@
     <title>Friend's Profile</title>
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <a href = "#main" class = "skip">Skip to Main Content</a>
         <nav>
             <ul class="nav">
+                <li id="title">MUSIC REVIEWER</li>
                 <li><a href = "index.html">Home</a></li>
                 <li><a href = "discover.html">Discover</a></li>
                 <li><a href = "profile.html">Profile</a></li>
@@ -19,15 +24,17 @@
         </nav>
     </header>
     <main>
-        <div class="profileheader">
-            <div class="avatar">
-                <img src="images/otheravatar.png">    
+        <div class="overallprofileheader">
+            <div class="profileheader">
+                <img class="avatar" src="images/otheravatar.png" alt="Avatar of girl with brown hair">
+                <h1>Layla Chammas</h1>
             </div>
-            <div class="othertext">
-            <h1>Layla's Profile</h1>
-            <h2>80% Match</h2>    
-            </div>
-            
+            <div class="dropdown2">
+                <button id="friendsbutton2">Friends</button>
+                <div id="menu2">
+                    <a class="menuitem2" href="other.html">Emily</a>
+                </div>    
+            </div>       
         </div>
         <div class="otherfavsongs">
             <h2>Favorite Songs</h2>
@@ -69,5 +76,12 @@
             <!-- All link to Spotify and pop up window of review -->
         </div>
     </main>
+    <script src="js/otherprofile.js"></script>
+    <footer>
+        <div a="https://open.spotify.com/">
+            <img id="logo" src="images/spotifylogo.svg" alt="Spotify logo">    
+        </div>
+        <p>Emily McCann's SI 339 Final Project<br>©Music Reviewer 2024</p>
+    </footer>
 </body>
 </html>

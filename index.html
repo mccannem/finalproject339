@@ -6,12 +6,17 @@
     <title>Reviewer</title>
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <a href = "#main" class = "skip">Skip to Main Content</a>
         <nav>
             <ul class="nav">
+                <li id="title">MUSIC REVIEWER</li>
                 <li class="active"><a href = "index.html">Home</a></li>
                 <li><a href = "discover.html">Discover</a></li>
                 <li class="profilenav"><a href = "profile.html">Profile</a></li>
@@ -19,7 +24,10 @@
         </nav>
     </header>
     <main class="indexmain">
-        <div class="explain">
+        <div>
+            <button id="aboutbutton">About</button>    
+        </div>
+        <div id="explain">
             <p>This is a website to share music with friends and discover new sounds. Check out reviews of all types of music!</p>
         </div>
         <div class="review1">
@@ -31,11 +39,14 @@
                 </a>
                 <!-- PROFILE PIC, links to other user-->
                 <a href="other.html">
-                    <img src="images/otheravatar.png" class="feedavatar" alt="Cartoon avatar of girl with brown hair">    
-                </a>                   
+                    <img src="images/otheravatar.png" id = "feedavatar1" class="feedavatar" alt="Cartoon avatar of girl with brown hair">    
+                </a> 
+                <div class="popout" id="popout1">
+                    <p>View Layla's Profile</p>
+                </div>                  
             </div>
             <p class="feed-review-text">Taylor Swift's sixth album is an aggressive, lascivious display of craftsmanship, but her full embrace of modern pop feels sadly conventional. (Pitchfork)</p>
-            <iframe class="spotifypreview" style="border-radius:12px" src="https://open.spotify.com/embed/album/6DEjYFkNZh67HP7R9PSZvv?utm_source=generator" width="400" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe class="spotifypreview" style="border-radius:12px" src="https://open.spotify.com/embed/album/6DEjYFkNZh67HP7R9PSZvv?utm_source=generator" width="400" height="152" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
         <div class="review2">
             <div class="review2imgs">
@@ -44,13 +55,38 @@
                 <img src="images/sos-sza.jpg" alt="Cover of the album SOS by SZA">
                 <!-- PROFILE PIC, links to other user-->
                 <a href="other.html">
-                    <img src="images/otheravatar.png" class="feedavatar" alt="Cartoon avatar of girl with brown hair">         
-                </a>                
+                    <img src="images/otheravatar.png" id = "feedavatar2" class="feedavatar" alt="Cartoon avatar of girl with brown hair">         
+                </a>  
+                <div class="popout" id="popout2">
+                    <p>View Layla's Profile</p>
+                </div>              
             </div>
             <p class="feed-review-text">SZA's long, ambitious, luxurious new album solidifies her position as a generational talent, an artist who translates her innermost feelings into indelible moments. (Pitchfork)</p>
-            <iframe class="spotifypreview" style="border-radius:12px" src="https://open.spotify.com/embed/album/07w0rG5TETcyihsEIZR3qG?utm_source=generator&theme=0" width="400" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe class="spotifypreview" style="border-radius:12px" src="https://open.spotify.com/embed/album/07w0rG5TETcyihsEIZR3qG?utm_source=generator&theme=0" width="400" height="152" frameBorder="0"  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>  
+        <div class="review3">
+            <div class="review3imgs">
+                <!-- ALBUM COVER, links to review -->
+                <!-- Plays preview of song/album using JavaScript -->
+                <img src="images/volcano-jungle.jpg" alt="Cover of the album SOS by SZA">
+                <!-- PROFILE PIC, links to other user-->
+                <a href="other.html">
+                    <img src="images/otheravatar.png" id = "feedavatar3" class="feedavatar" alt="Cartoon avatar of girl with brown hair">         
+                </a>  
+                <div class="popout" id="popout3">
+                    <p>View Layla's Profile</p>
+                </div>              
+            </div>
+            <p class="feed-review-text">This confident but formulaic fourth outing from the UK dance duo mixes 70s funk breakbeats, wistful guitar soul and euphoric disco (The Guardian)</p>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/5xnXOCf5aZgZ43DgGN4EDv?utm_source=generator&theme=0" width="400" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
     </main>
-   
+    <script src="js/index.js"></script>
+   <footer>
+        <div a="https://open.spotify.com/">
+            <img id="logo" src="images/spotifylogo.svg" alt="Spotify logo">    
+        </div>
+        <p>Emily McCann's SI 339 Final Project<br>©Music Reviewer 2024</p>
+   </footer>
 </body>
 </html>

@@ -6,18 +6,24 @@
     <title>reputation Review</title>
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <a href = "#main" class = "skip">Skip to Main Content</a>
         <nav>
             <ul class="nav">
+                <li id="title">MUSIC REVIEWER</li>
                 <li><a href = "index.html">Home</a></li>
                 <li><a href = "discover.html">Discover</a></li>
                 <li><a href = "profile.html">Profile</a></li>
             </ul>
         </nav>
         <h1 class="reviewtitle">reputation</h1>
+        <h2 id="artistnamereview">Taylor Swift</h2>
     </header>
     <main>
         <div class="reviewheader">
@@ -25,21 +31,28 @@
                 <img src="images/reputation-taylorswift.jpg" alt="Cover of the album reputation by Taylor Swift">
             </div>
             <div class="stats">
-                <h2>Stat 1</h2>
-                <h2>Stat 2</h2>
-                <h2>Stat 3</h2>
+                <h2>Artist Rank: 1</h2>
+                <h2>Album Rank: 22</h2>
+                <h2>96% Match</h2>
             </div>    
         </div>
         
         <div class="reviews">
-            <p>Review 1</p>
-            <p>Review 2</p>
+            <p>Taylor Swift's sixth album is an aggressive, lascivious display of craftsmanship, but her full embrace of modern pop feels sadly conventional. (Pitchfork)</p>
+            <p>While 'Reputation' is surprisingly introspective, "because she's Taylor Swift, she can't stop being her own turbulent, excessive, exhausting and gloriously extra self. (Rolling Stone)</p>
             <!-- Hide until tablet -->
             <!-- USE BUTTON IN DESKTOP -->
-            <button>See More</button>
-            <p>Review 3</p>
-            <p>Review 4</p>
+            <button id="showbutton">See More</button>
+            <p class="hiddenreview">On Reputation, Swift has finally realized that being right or getting the last word isn't the most important thing. (Billboard)</p>
+            <p class="hiddenreview">It's Swift's refusal to have to choose between delightfully effervescent sonic values and raw, classic candor that makes “Reputation” the pop album of the year. (Variety)</p>
         </div>
     </main>
+    <script src="js/review.js"></script>
+    <footer>
+        <div a="https://open.spotify.com/">
+            <img id="logo" src="images/spotifylogo.svg" alt="Spotify logo">    
+        </div>
+        <p>Emily McCann's SI 339 Final Project<br>©Music Reviewer 2024</p>
+    </footer>
 </body>
 </html>

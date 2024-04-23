@@ -6,23 +6,37 @@
     <title>My Profile</title>
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <a href = "#main" class = "skip">Skip to Main Content</a>
         <nav>
             <ul class="nav">
+                <li id="title">MUSIC REVIEWER</li>
                 <li><a href = "index.html">Home</a></li>
                 <li><a href = "discover.html">Discover</a></li>
                 <li class="active"><a href = "profile.html">Profile</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <div class="profileheader">
-            <img src="images/myavatar.png" alt="Cartoon avatar of a girl with blonde hair">
-            <h1>Emily's Profile</h1>
-        </div>
+    <main id="profilemain">
+        <div class="overallprofileheader">
+            <div class="profileheader">
+                <img class="avatar" src="images/myprofile.jpg" alt="Profile picture of girl with brown hair">
+                <h1>Emily McCann</h1>
+            </div>
+            <div class="dropdown1">
+                <button id="friendsbutton1">Friends</button>
+                <div id="menu1">
+                    <a class="menuitem1" href="other.html">Layla</a>
+                </div>    
+            </div>       
+        </div>  
+        
         <div class="otherfavsongs">
             <h2>Favorite Songs</h2>
             <div class="songgrid">
@@ -69,5 +83,12 @@
             <!-- All link to Spotify and pop up window of review -->
         </div>
     </main>
+    <script src="js/myprofile.js"></script>
+    <footer>
+        <div a="https://open.spotify.com/">
+            <img id="logo" src="images/spotifylogo.svg" alt="Spotify logo">    
+        </div>
+        <p>Emily McCann's SI 339 Final Project<br>©Music Reviewer 2024</p>
+    </footer>
 </body>
 </html>

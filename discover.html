@@ -6,29 +6,36 @@
     <title>Discover</title>
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <a href = "#main" class = "skip">Skip to Main Content</a>
         <nav>
             <ul class="nav">
+                <li id="title">MUSIC REVIEWER</li>
                 <li><a href = "index.html">Home</a></li>
                 <li class="active"><a href = "discover.html">Discover</a></li>
                 <li><a href = "profile.html">Profile</a></li>
             </ul>
-        </nav>
-        <h1 class="discovertitle">Discover</h1>
+        </nav>              
+        
     </header>
     <main id="discovermain">
+        <h1 class="discovertitle">Discover</h1>        
         <!-- ALBUMS -->
-        <h2>Albums</h2>
+        <div id="albumheader">
+            <h2>Albums</h2>
+        </div>
         <div class="discoverslides">
             <div class="album-prev">
                 <a href = "https://open.spotify.com/album/4yP0hdKOZPNshxUOjY0cZj?si=CBdLTTSbSUabPA6vdY2Rcw">
                         <img src="images/afterhours-theweeknd.jpg" alt="Cover of the album After Hours by The Weeknd">
                         <div class="discovertext">
-                            <p>After Hours</p>   
-                            <p>The Weeknd</p>     
+                            <p>After Hours<br>The Weeknd</p>     
                         </div>       
                 </a> 
             </div>
@@ -37,8 +44,7 @@
                     <figure>
                         <img src="images/eternalsunshine-arianagrande.jpg" alt="Cover of the album eternal sunshine by Ariana Grande"> 
                         <div class="discovertext">
-                            <p>eternal sunshine</p>
-                            <p>Ariana Grande</p>
+                            <p>eternal sunshine<br>Ariana Grande</p>
                         </div>   
                     </figure>
                     
@@ -48,8 +54,7 @@
                 <a href = "https://open.spotify.com/album/7xV2TzoaVc0ycW7fwBwAml?si=foIWxXt4T5ix0PEd81T6uQ">
                     <img src="images/fineline-harrystyles.jpg" alt="Cover of the album Fine Line by Harry Styles">
                     <div class="discovertext">
-                        <p>Fine Line</p>
-                        <p>Harry Styles</p>
+                        <p>Fine Line<br>Harry Styles</p>
                     </div>
                 </a>
             </div>
@@ -57,8 +62,7 @@
                 <a href = "https://open.spotify.com/album/1DF9B2hfwX4EdgEFwGcRwh?si=0t3xg3t6QH2fwTC3UQyEcg">
                     <img src="images/icarusfalls-zayn.jpg" alt="Cover of the album Icarus Falls by Zayn">    
                     <div class="discovertext">
-                        <p>Icarus Falls</p>
-                        <p>Zayn</p>
+                        <p>Icarus Falls<br>Zayn</p>
                     </div>
                 </a>
             </div>
@@ -66,14 +70,15 @@
             <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>  
         </div>
         <!-- SONGS -->
-        <h2>Songs</h2>
+        <div id="songheader">
+            <h2>Songs</h2>
+        </div>
         <div class="discoverslides">
             <div class="song-prev">
                 <a href = "https://open.spotify.com/track/19kHhX6f6EfLU7rcO3RqjO?si=d80fe03a332344b3">
                     <img src="images/volcano-jungle.jpg" alt="Cover of the album Volcano by Jungle">
                     <div class="discovertext">
-                        <p>"Back on 74"</p>
-                        <p>Jungle</p>
+                        <p>"Back on 74"<br>Jungle</p>
                     </div>
                 </a>
             </div>
@@ -81,8 +86,7 @@
                 <a href = "https://open.spotify.com/track/41SwdQIX8Hy2u6fuEDgvWr?si=2f973de192564b83">
                     <img src="images/bubba-kaytranada.jpg" alt="Cover of the album Bubba by Kaytranada">
                     <div class="discovertext">
-                        <p>"10%"</p>
-                        <p>Kaytranada</p>
+                        <p>"10%"<br>Kaytranada</p>
                     </div>
                 </a>
             </div>
@@ -90,8 +94,7 @@
                 <a href = "https://open.spotify.com/track/4QhWbupniDd44EDtnh2bFJ?si=84646036526d419c">
                     <img src="images/channelorange-frankocean.jpg" alt="Cover of the album Channel Orange by Frank Ocean">    
                     <div class="discovertext">
-                        <p>"Pyramids"</p>
-                        <p>Frank Ocean</p>
+                        <p>"Pyramids"<br>Frank Ocean</p>
                     </div>
                 </a>    
             </div>
@@ -99,8 +102,7 @@
                 <a href = "https://open.spotify.com/track/01z2fBGB8Hl3Jd3zXe4IXR?si=6aa13f4e1ec7486e">
                     <img src="images/swimming-macmiller.jpg" alt="Cover of the album Swimming by Mac Miller">
                     <div class="discovertext">
-                        <p>"Come Back to Earth"</p>
-                        <p>Mac Miller</p>
+                        <p>"Come Back to Earth"<br>Mac Miller</p>
                     </div>
                 </a>
             </div>
@@ -108,7 +110,9 @@
             <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>  
         </div>
         <!-- PLAYLISTS -->
-        <h2>Playlists</h2>
+        <div id="playlistheader">
+            <h2>Playlists</h2>    
+        </div>
         <div class="discoverslides">
             <div class="playlist-prev">
                 <a href = "https://open.spotify.com/playlist/37i9dQZF1DWUa8ZRTfalHk?si=8f5b1c44360f4165">
@@ -147,6 +151,12 @@
             <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>  
         </div>
     </main>
-    <script src="js/script.js"></script>
+    <script src="js/discover.js"></script>
+    <footer>
+        <div a="https://open.spotify.com/">
+            <img id="logo" src="images/spotifylogo.svg" alt="Spotify logo">    
+        </div>
+        <p>Emily McCann's SI 339 Final Project<br>©Music Reviewer 2024</p>
+    </footer>
 </body>
 </html>
