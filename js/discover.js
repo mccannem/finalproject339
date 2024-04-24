@@ -32,3 +32,7 @@ else {
       }
 }
 
+window.addEventListener('load', function() {
+    document.getElementById('discovertitle').style.opacity = 1;
+})
+

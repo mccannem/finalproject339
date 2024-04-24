@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reviewer</title>
+    <link rel="shortcut icon" type="image/png" href="images/musical-note.png"/>
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- Fonts -->
@@ -13,7 +14,7 @@
 </head>
 <body>
     <header>
-        <a href = "#main" class = "skip">Skip to Main Content</a>
+        <a href = "indexmain" class = "skip">Skip to Main Content</a>
         <nav>
             <ul class="nav">
                 <li id="title">MUSIC REVIEWER</li>
@@ -24,6 +25,7 @@
         </nav>
     </header>
     <main class="indexmain">
+        <h1>Feed</h1>
         <div>
             <button id="aboutbutton">About</button>    
         </div>
@@ -35,8 +37,11 @@
                 <!-- ALBUM COVER, links to review -->
                 <!-- Plays preview of song/album using JavaScript -->
                 <a href="review.html">
-                    <img src="images/reputation-taylorswift.jpg" alt="Cover of the album reputation by Taylor Swift">
+                    <img id='repimg' src="images/reputation-taylorswift.jpg" alt="Cover of the album reputation by Taylor Swift">
                 </a>
+                <div id="reviewtag" class="clickforreview">
+                    <p>Click for a review!</p>
+                </div>
                 <!-- PROFILE PIC, links to other user-->
                 <a href="other.html">
                     <img src="images/otheravatar.png" id = "feedavatar1" class="feedavatar" alt="Cartoon avatar of girl with brown hair">    
@@ -68,7 +73,7 @@
             <div class="review3imgs">
                 <!-- ALBUM COVER, links to review -->
                 <!-- Plays preview of song/album using JavaScript -->
-                <img src="images/volcano-jungle.jpg" alt="Cover of the album SOS by SZA">
+                <img src="images/volcano-jungle.jpg" alt="Cover of the album Volcano by Jungle">
                 <!-- PROFILE PIC, links to other user-->
                 <a href="other.html">
                     <img src="images/otheravatar.png" id = "feedavatar3" class="feedavatar" alt="Cartoon avatar of girl with brown hair">         
@@ -78,7 +83,7 @@
                 </div>              
             </div>
             <p class="feed-review-text">This confident but formulaic fourth outing from the UK dance duo mixes 70s funk breakbeats, wistful guitar soul and euphoric disco (The Guardian)</p>
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/5xnXOCf5aZgZ43DgGN4EDv?utm_source=generator&theme=0" width="400" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe class="spotifypreview" style="border-radius:12px" src="https://open.spotify.com/embed/album/5xnXOCf5aZgZ43DgGN4EDv?utm_source=generator&theme=0" width="400" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
     </main>
     <script src="js/index.js"></script>

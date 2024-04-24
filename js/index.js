@@ -1,7 +1,8 @@
 // INDEX
 document.getElementById("aboutbutton").addEventListener("click", function() {
+    document.getElementById("explain").style.opacity = 1;
     document.getElementById("explain").style.display = "block";
-    document.getElementById("aboutbutton").style.display = "none";
+    document.getElementById("aboutbutton").style.opacity = 0;
 })
 
 var popoutFunction1 = function(){
@@ -33,3 +34,17 @@ var removePopoutFunction3 = function(){
     document.getElementById("popout3").classList.remove("popouthover");
 }
 document.getElementById("feedavatar3").addEventListener('mouseleave', removePopoutFunction3);
+
+
+window.addEventListener('load', function() {
+    document.getElementById('aboutbutton').style.opacity = 1;
+})
+
+var clickforadd = function(){
+    document.getElementById("reviewtag").classList.add("clickforhover");
+}
+document.getElementById('repimg').addEventListener('mouseover', clickforadd);
+var clickforremove = function(){
+    document.getElementById("reviewtag").classList.remove("clickforhover");
+}
+document.getElementById('repimg').addEventListener('mouseleave', clickforremove);
